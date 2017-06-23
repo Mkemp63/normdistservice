@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="a914626e-3c90-4617-aa8c-32196e7ede37" activeEnvironment="Default" name="5 messages" resourceRoot="" soapui-version="5.3.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="bd854f1d-14f0-4e4d-b5c6-5306957a90a8" wsaVersion="NONE" name="NormServiceImplPortBinding" type="wsdl" bindingName="{http://wsproducer.iac.hu.nl/}NormServiceImplPortBinding" soapVersion="1_1" anonymous="optional" definition="http://localhost:8080/ws-producer/soap?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://localhost:8080/ws-producer/soap</con:endpoint></con:endpoints><con:operation id="d6442671-572e-4048-a51b-ea20e5932d95" isOneWay="false" action="" name="calculateNormdist" bindingOperationName="calculateNormdist" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="c8d3470a-562f-4198-bf0c-ecbe2c06d898" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/ws-producer/soap</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:req="http://nl.hu.iac/normdistservice/request">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <req:normdistRequest>\r
+         <req:skewness>-0.1</req:skewness>\r
+         <req:kurtosis>0.1</req:kurtosis>\r
+      </req:normdistRequest>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://wsproducer.iac.hu.nl/normdistServiceInterface/calculateNormdistRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call id="7a9a27ee-d770-46c3-9fd5-9d76db83ee35" name="Request 2"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/ws-producer/soap</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:req="http://nl.hu.iac/normdistservice/request">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <req:normdistRequest>\r
+         <req:skewness>6</req:skewness>\r
+         <req:kurtosis>6</req:kurtosis>\r
+      </req:normdistRequest>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://wsproducer.iac.hu.nl/normdistServiceInterface/calculateNormdistRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call id="aa807514-34fd-4c79-9c9b-b84659988717" name="Request 3"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/ws-producer/soap</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:req="http://nl.hu.iac/normdistservice/request">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <req:normdistRequest>\r
+         <req:skewness>2</req:skewness>\r
+         <req:kurtosis>a</req:kurtosis>\r
+      </req:normdistRequest>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://wsproducer.iac.hu.nl/normdistServiceInterface/calculateNormdistRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call id="1799a28d-aa29-4da8-97d6-cbbba81b057d" name="Request 4"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/ws-producer/soap</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:req="http://nl.hu.iac/normdistservice/request">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <req:normdistRequest>\r
+         <req:skewness>3.2</req:skewness>\r
+         <req:kurtosis>-5.66</req:kurtosis>\r
+      </req:normdistRequest>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://wsproducer.iac.hu.nl/normdistServiceInterface/calculateNormdistRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="bb09292d-c08f-4505-9eb7-77dec9c2df23" wsaVersion="NONE" name="normdistServiceBinding" type="wsdl" bindingName="{http://nl.hu.iac/normdistservice/}normdistServiceBinding" soapVersion="1_1" anonymous="optional" definition="http://localhost:8080/ws-producer/soap?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://localhost:8080/ws-producer/soap?wsdl"><con:part><con:url>http://localhost:8080/ws-producer/soap?wsdl</con:url><con:content><![CDATA[<!--Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2.8 svn-revision#13980.-->
+<!--Generated by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2.8 svn-revision#13980.-->
+<definitions targetNamespace="http://wsproducer.iac.hu.nl/" name="NormServiceImplService" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://wsproducer.iac.hu.nl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <import namespace="http://nl.hu.iac/normdistservice/" location="http://localhost:8080/ws-producer/soap?wsdl=1"/>
+  <binding name="NormServiceImplPortBinding" type="ns1:normdistServiceInterface" xmlns:ns1="http://nl.hu.iac/normdistservice/">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <operation name="calculateNormdist">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="Fault">
+        <soap:fault name="Fault" use="literal"/>
+      </fault>
+    </operation>
+  </binding>
+  <service name="NormServiceImplService">
+    <port name="NormServiceImplPort" binding="tns:NormServiceImplPortBinding">
+      <soap:address location="http://localhost:8080/ws-producer/soap"/>
+    </port>
+  </service>
+</definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://localhost:8080/ws-producer/soap?wsdl=1</con:url><con:content><![CDATA[<!--Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2.8 svn-revision#13980.-->
+<wsdl:definitions name="NormdistService" targetNamespace="http://nl.hu.iac/normdistservice/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:req="http://nl.hu.iac/normdistservice/request" xmlns:rsp="http://nl.hu.iac/normdistservice/response" xmlns:flt="http://nl.hu.iac/normdistservice/fault" xmlns="http://nl.hu.iac/normdistservice/">
+  <wsdl:types>
+    <xsd:schema>
+      <xsd:import namespace="http://nl.hu.iac/normdistservice/request" schemaLocation="http://localhost:8080/ws-producer/soap?xsd=2"/>
+      <xsd:import namespace="http://nl.hu.iac/normdistservice/response" schemaLocation="http://localhost:8080/ws-producer/soap?xsd=3"/>
+      <xsd:import namespace="http://nl.hu.iac/normdistservice/fault" schemaLocation="http://localhost:8080/ws-producer/soap?xsd=1"/>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="request">
+    <wsdl:part name="request" element="req:normdistRequest"/>
+  </wsdl:message>
+  <wsdl:message name="response">
+    <wsdl:part name="response" element="rsp:normdistResponse"/>
+  </wsdl:message>
+  <wsdl:message name="fault">
+    <wsdl:part name="fault" element="flt:normdistFault"/>
+  </wsdl:message>
+  <wsdl:portType name="normdistServiceInterface">
+    <wsdl:operation name="calculateNormdist">
+      <wsdl:input message="request"/>
+      <wsdl:output message="response"/>
+      <wsdl:fault name="fault" message="fault"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="normdistServiceBinding" type="normdistServiceInterface">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="calculateNormdist">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="fault">
+        <soap:fault name="fault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="normdistServiceService">
+    <wsdl:port name="WS-Port" binding="normdistServiceBinding">
+      <soap:address location="http://localhost:8080/ws-producer/soap"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://localhost:8080/ws-producer/soap?xsd=2</con:url><con:content><![CDATA[<!--Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2.8 svn-revision#13980.-->
+<xs:schema elementFormDefault="qualified" targetNamespace="http://nl.hu.iac/normdistservice/request" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://nl.hu.iac/normdistservice/request" xmlns:pow="http://nl.hu.iac/normdistservice/normdistTypes">
+  <!--root element-->
+  <xs:element name="normdistRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="skewness" type="xs:double"/>
+        <xs:element name="kurtosis" type="xs:double"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://localhost:8080/ws-producer/soap?xsd=3</con:url><con:content><![CDATA[<!--Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2.8 svn-revision#13980.-->
+<schema elementFormDefault="qualified" targetNamespace="http://nl.hu.iac/normdistservice/response" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://nl.hu.iac/normdistservice/response">
+  <element name="normdistResponse">
+    <complexType>
+      <sequence>
+        <element name="result" type="boolean"/>
+      </sequence>
+    </complexType>
+  </element>
+</schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://localhost:8080/ws-producer/soap?xsd=1</con:url><con:content><![CDATA[<!--Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2.8 svn-revision#13980.-->
+<schema elementFormDefault="qualified" targetNamespace="http://nl.hu.iac/normdistservice/fault" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://nl.hu.iac/normdistservice/fault">
+  <element name="normdistFault">
+    <complexType>
+      <annotation>
+        <documentation>test fault</documentation>
+      </annotation>
+      <sequence>
+        <element name="errorCode" nillable="false" type="short"/>
+        <element maxOccurs="1" minOccurs="0" name="message" type="string"/>
+      </sequence>
+    </complexType>
+  </element>
+</schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://localhost:8080/ws-producer/soap</con:endpoint></con:endpoints><con:operation id="b3353771-46ae-4948-985c-d585010671c1" isOneWay="false" action="" name="calculateNormdist" bindingOperationName="calculateNormdist" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="5266fefd-2399-44f1-942b-88071399f276" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/ws-producer/soap</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:req="http://nl.hu.iac/normdistservice/request">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <req:normdistRequest>\r
+         <req:skewness>?</req:skewness>\r
+         <req:kurtosis>?</req:kurtosis>\r
+      </req:normdistRequest>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://wsproducer.iac.hu.nl/normdistServiceInterface/calculateNormdistRequest"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
